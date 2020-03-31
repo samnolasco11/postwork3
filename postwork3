@@ -1,0 +1,52 @@
+
+(base) C:\Users\52558> mycli --version
+Version: 1.20.1
+
+(base) C:\Users\52558> mycli -u root -h ec2-54-213-51-169.us-west-2.compute.amazonaws.com
+Password:
+Password:
+(1045, "Access denied for user 'root'@'201.149.59.226' (using password: YES)")
+
+(base) C:\Users\52558> mycli -u root -h ec2-54-213-51-169.us-west-2.compute.amazonaws.com
+Password:
+mysql 10.1.44-MariaDB-0ubuntu0.18.04.1
+mycli 1.20.1
+Chat: https://gitter.im/dbcli/mycli
+Mail: https://groups.google.com/forum/#!forum/mycli-users
+Home: http://mycli.net
+Thanks to the contributor - Magnus udd
+(none)> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
++--------------------+
+3 rows in set
+Time: 0.186s
+(none)> create database Sam;
+Query OK, 1 row affected
+Time: 0.182s
+(none)> show databases;
++--------------------+
+| Database           |
++--------------------+
+| ANDREA             |
+| Adrii_Merlin       |
+| FranciscoGarcia_DB |
+| Jazmin             |
+| Lilia              |
+| ROSS               |
+| Rosalia            |
+| Sam                |
+| Sergio             |
+| Zamby              |
+| information_schema |
+| janet              |
+| maria              |
+| mysql              |
+| performance_schema |
++--------------------+
+15 rows in set
+Time: 0.238s
